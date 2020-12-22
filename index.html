@@ -35,7 +35,7 @@ int main()
                 string c(1, girilen[i]);
 
                 islem.push_back(c);
-                sayi.push_back(atoll(sayitext.c_str()));
+                sayi.push_back(atof(sayitext.c_str()));
                 sayitext = "";
                 bulundu = true;
             }
@@ -44,7 +44,7 @@ int main()
             sayitext += girilen[i];
         }
     }
-    sayi.push_back(atoll(sayitext.c_str()));
+    sayi.push_back(atof(sayitext.c_str()));
     long float  y = 0;
     auto calculate = [&](long float n, string op) {
         if (op == "*") {
