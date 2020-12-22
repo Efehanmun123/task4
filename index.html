@@ -10,6 +10,7 @@
     <center>ROBOTİK TASK 4 GÖREVİ ÇÖZÜM KODU<b>(Efehan Mun ve Mehmed Faruk Dere birlikte yapmistir.)</b></center>
     <h4>NOT:HTML ile yazilan kodu atarken buyuktur ve kucuktur isareti arasindakileri yazdirmadigi icin buyuktur ve kucuktur isaretlerini sildik</h4>
     <pre>
+//iostream, vector, string, cmath i buyuktur kucuktur icine aliniz
 #include iostream
 using namespace std;
 #include vector
@@ -24,8 +25,10 @@ int main()
     cout << "Us almak icin '^' Mod almak icin '%' Base almak icin 'b' kullaniniz." << endl;
     cout << "Islemler ve sayilar arasinda bosluk birakmamaya ozen gosteriniz." << endl;
     cin >> girilen;
-    vector<float > sayi;
-    vector<string> islem;
+    //vector buyuktur kucuktur icinde sayi
+    vector float  sayi;
+    //vector buyuktur kucuktur icinde islem
+    vector string islem;
     string sayitext = "";
     string islemler = "^*/+-%b";
     for (int i = 0; i < girilen.length(); i++) {
@@ -118,10 +121,9 @@ int main()
         }
         i++;
     }
-    cout << "Isleminizin sonucu: "<<  y;
-   return 0;
+    cout << "Isleminizin sonucu: " << y;
+    return 0;
 }
-
     </pre>
 </body>
 </html>
