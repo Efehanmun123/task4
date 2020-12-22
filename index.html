@@ -2,18 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
-       <title>Task 4(Efehan Mun)</title>
+       <title>Task 4(Efehan Mun ve Faruk Dere)</title>
         
     </head>
 <body>
     
     <center>ROBOTİK TASK 4 GÖREVİ ÇÖZÜM KODU<b>(Efehan Mun ve Mehmed Faruk Dere birlikte yapmistir.)</b></center>
+    <h4>NOT:ilk satira //HTML le yazilan kodu atarken buyuktur ve kucuktur isareti arasindakileri yazdirmadigi icin buyuktur ve kucuktur isaretlerini sildik
     <pre>
-#include <iostream>
+#include iostream
 using namespace std;
-#include <vector>
-#include <string>
-#include <cmath>
+#include vector
+#include string
+#include cmath
 int main()
 {
     string c;
@@ -34,7 +35,7 @@ int main()
                 string c(1, girilen[i]);
 
                 islem.push_back(c);
-                sayi.push_back(strtod(sayitext.c_str()));
+                sayi.push_back(atoll(sayitext.c_str()));
                 sayitext = "";
                 bulundu = true;
             }
@@ -43,9 +44,9 @@ int main()
             sayitext += girilen[i];
         }
     }
-    sayi.push_back(strtod(sayitext.c_str()));
-    double  y = 0;
-    auto calculate = [&](double n, string op) {
+    sayi.push_back(atoll(sayitext.c_str()));
+    long float  y = 0;
+    auto calculate = [&](long float n, string op) {
         if (op == "*") {
             y = sayi[n] * sayi[n + 1];
         }
@@ -121,10 +122,6 @@ int main()
    return 0;
 }
 
-                cout << "Isleminizin sonucu: "<<  y;
-               
-                return 0;
-            
     </pre>
 </body>
 </html>
